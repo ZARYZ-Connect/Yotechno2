@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.env
+.env.*
+venv/
+env/
+.venv/
+
+# Django
+backend/staticfiles/
+backend/media/
+
+# Node.js
+frontend/node_modules/
+frontend/dist/
+
+# SQLite (local dev only — persisted in Docker volume in production)
+backend/db.sqlite3
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# Docker
+.dockerignore
