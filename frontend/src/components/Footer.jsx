@@ -11,8 +11,11 @@ const navLinks = [
 ]
 
 const services = [
-  'Web Development', 'Mobile Applications', 'Cloud Solutions',
-  'AI & Machine Learning', 'UI/UX Design', 'Cybersecurity',
+  'Access Control Systems',
+  'CCTV Surveillance Solutions',
+  'Intrusion & Alarm Systems',
+  'Time Attendance & Workforce Management',
+  'Network Infrastructure & Troubleshooting',
 ]
 
 export default function Footer() {
@@ -26,7 +29,7 @@ export default function Footer() {
               <img src={logoImg} alt="Yotechno Logo" className="footer__logo-img" />
             </Link>
             <p className="footer__tagline">
-              Empowering businesses with innovative technology solutions. We build the future, one line of code at a time.
+              Empowering businesses with reliable security infrastructure and network solutions.
             </p>
             <div className="footer__socials">
               <a href="#" className="footer__social" aria-label="LinkedIn">in</a>
