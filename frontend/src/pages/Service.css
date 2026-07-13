@@ -130,10 +130,10 @@
 /* Service Hero Two Column Layout */
 .service-hero {
   position: relative;
-  background: radial-gradient(circle at 70% 30%, rgba(30, 136, 229, 0.08) 0%, rgba(255, 255, 255, 0) 60%), #ffffff;
+  background: radial-gradient(circle at 70% 30%, rgba(123, 31, 162, 0.08) 0%, rgba(255, 255, 255, 0) 60%), #ffffff;
   padding: 100px 0 80px;
   overflow: hidden;
-  border-bottom: 1px solid rgba(30, 136, 229, 0.06);
+  border-bottom: 1px solid rgba(123, 31, 162, 0.06);
 }
 .service-hero .container {
   display: grid;
@@ -149,9 +149,9 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  border: 1.5px solid #1e88e5;
-  color: #1e88e5;
-  background: rgba(30, 136, 229, 0.04);
+  border: 1.5px solid #7b1fa2;
+  color: #7b1fa2;
+  background: rgba(123, 31, 162, 0.04);
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -170,13 +170,15 @@
   color: #0c0b1a;
   margin-bottom: 12px;
 }
-.highlight-blue {
-  color: #1e88e5;
+.highlight-gradient {
+  background: linear-gradient(135deg, #7b1fa2 0%, #ff6d00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .title-underline {
   width: 60px;
   height: 4px;
-  background: #1e88e5;
+  background: linear-gradient(135deg, #7b1fa2 0%, #ff6d00 100%);
   border-radius: 2px;
   margin-bottom: 24px;
 }
@@ -204,7 +206,7 @@
   width: 32px;
   height: 32px;
   border-radius: 50px;
-  background: rgba(30, 136, 229, 0.08);
+  background: rgba(123, 31, 162, 0.08);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -222,31 +224,30 @@
   align-items: center;
   gap: 16px;
 }
-.btn-solid-blue {
+.btn-solid-gradient {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #1e88e5;
+  background: linear-gradient(135deg, #7b1fa2 0%, #ff6d00 100%);
   color: #ffffff;
   font-size: 0.92rem;
   font-weight: 700;
   padding: 12px 24px;
   border-radius: 8px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(30, 136, 229, 0.3);
+  box-shadow: 0 4px 15px rgba(123, 31, 162, 0.25);
   text-decoration: none;
 }
-.btn-solid-blue:hover {
-  background: #1565c0;
+.btn-solid-gradient:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(30, 136, 229, 0.4);
+  box-shadow: 0 6px 20px rgba(123, 31, 162, 0.35);
 }
-.btn-outline-blue {
+.btn-outline-purple {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  border: 1.5px solid #1e88e5;
-  color: #1e88e5;
+  border: 1.5px solid #7b1fa2;
+  color: #7b1fa2;
   background: transparent;
   font-size: 0.92rem;
   font-weight: 700;
@@ -255,8 +256,8 @@
   transition: all 0.3s ease;
   text-decoration: none;
 }
-.btn-outline-blue:hover {
-  background: rgba(30, 136, 229, 0.05);
+.btn-outline-purple:hover {
+  background: rgba(123, 31, 162, 0.05);
   transform: translateY(-2px);
 }
 

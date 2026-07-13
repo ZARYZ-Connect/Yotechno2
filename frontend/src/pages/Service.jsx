@@ -77,7 +77,9 @@ export default function Service() {
             </div>
 
             <h1 className="service-hero__title animate-fade-up">
-              Our <span className="highlight-blue">Services</span>
+              Our <span className="highlight-gradient">Services</span><br />
+              Drive Complete<br />
+              Technology Solutions
             </h1>
             <div className="title-underline" />
 
@@ -88,7 +90,7 @@ export default function Service() {
             <div className="service-hero__checklist animate-fade-up" style={{ animationDelay: '0.2s' }}>
               <div className="checklist-item">
                 <div className="checklist-icon-wrapper">
-                  <svg viewBox="0 0 24 24" width="20" height="20" fill="#0066cc">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="#7b1fa2">
                     <path d="M12 2L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-3zm-2 15l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
                   </svg>
                 </div>
@@ -97,7 +99,7 @@ export default function Service() {
 
               <div className="checklist-item">
                 <div className="checklist-icon-wrapper">
-                  <svg viewBox="0 0 24 24" width="20" height="20" fill="#0066cc">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="#7b1fa2">
                     <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
                   </svg>
                 </div>
@@ -106,7 +108,7 @@ export default function Service() {
 
               <div className="checklist-item">
                 <div className="checklist-icon-wrapper">
-                  <svg viewBox="0 0 24 24" width="20" height="20" fill="#0066cc">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="#7b1fa2">
                     <path d="M12 2c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                   </svg>
                 </div>
@@ -115,7 +117,7 @@ export default function Service() {
 
               <div className="checklist-item">
                 <div className="checklist-icon-wrapper">
-                  <svg viewBox="0 0 24 24" width="20" height="20" fill="#0066cc">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="#7b1fa2">
                     <path d="M12 2c-4.97 0-9 4.03-9 9v7c0 1.66 1.34 3 3 3h3v-8H5v-2c0-3.87 3.13-7 7-7s7 3.13 7 7v2h-4v8h3c1.66 0 3-1.34 3-3v-7c0-4.97-4.03-9-9-9z"/>
                   </svg>
                 </div>
@@ -124,8 +126,8 @@ export default function Service() {
             </div>
 
             <div className="service-hero__actions animate-fade-up" style={{ animationDelay: '0.3s' }}>
-              <a href="#services-list" className="btn-solid-blue">Explore Services →</a>
-              <Link to="/contact" className="btn-outline-blue">Get in Touch →</Link>
+              <a href="#services-list" className="btn-solid-gradient">Explore Services →</a>
+              <Link to="/contact" className="btn-outline-purple">Get in Touch →</Link>
             </div>
           </div>
 
@@ -134,12 +136,12 @@ export default function Service() {
               {/* Background Circular Ring */}
               <div className="diagram-ring-wrapper">
                 <svg className="diagram-ring-svg" viewBox="0 0 100 100">
-                  <circle cx="50" cy="50" r="38" stroke="rgba(30, 136, 229, 0.12)" strokeWidth="1" strokeDasharray="3,3" fill="none"/>
-                  <circle cx="50" cy="12" r="2" fill="#1e88e5" />
-                  <circle cx="86" cy="38" r="2" fill="#1e88e5" />
-                  <circle cx="72" cy="80" r="2" fill="#1e88e5" />
-                  <circle cx="28" cy="80" r="2" fill="#1e88e5" />
-                  <circle cx="14" cy="38" r="2" fill="#1e88e5" />
+                  <circle cx="50" cy="50" r="38" stroke="rgba(123, 31, 162, 0.12)" strokeWidth="1" strokeDasharray="3,3" fill="none"/>
+                  <circle cx="50" cy="12" r="2" fill="#7b1fa2" />
+                  <circle cx="86" cy="38" r="2" fill="#7b1fa2" />
+                  <circle cx="72" cy="80" r="2" fill="#7b1fa2" />
+                  <circle cx="28" cy="80" r="2" fill="#7b1fa2" />
+                  <circle cx="14" cy="38" r="2" fill="#7b1fa2" />
                 </svg>
               </div>
 
@@ -147,10 +149,16 @@ export default function Service() {
               <div className="diagram-center-node">
                 <div className="center-node-icon">
                   <svg viewBox="0 0 100 100" width="70" height="70">
-                    <rect x="25" y="45" width="12" height="40" fill="#1565c0" opacity="0.8" />
-                    <rect x="42" y="25" width="16" height="60" fill="#1e88e5" />
-                    <rect x="63" y="38" width="12" height="47" fill="#42a5f5" opacity="0.8" />
-                    <line x1="15" y1="85" x2="85" y2="85" stroke="#1e88e5" strokeWidth="2" />
+                    <defs>
+                      <linearGradient id="center-building-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stopColor="#7b1fa2" />
+                        <stop offset="100%" stopColor="#ff6d00" />
+                      </linearGradient>
+                    </defs>
+                    <rect x="25" y="45" width="12" height="40" fill="url(#center-building-grad)" opacity="0.8" />
+                    <rect x="42" y="25" width="16" height="60" fill="url(#center-building-grad)" />
+                    <rect x="63" y="38" width="12" height="47" fill="url(#center-building-grad)" opacity="0.8" />
+                    <line x1="15" y1="85" x2="85" y2="85" stroke="url(#center-building-grad)" strokeWidth="2" />
                   </svg>
                 </div>
                 <div className="center-node-title">End-to-End Technology Solutions</div>
@@ -159,9 +167,15 @@ export default function Service() {
 
               {/* Node 1: Access Control (Top) */}
               <div className="diagram-node node-top">
-                <div className="node-circle" style={{ borderColor: '#1e88e5' }}>
-                  <svg viewBox="0 0 24 24" width="22" height="22" fill="#1e88e5">
-                    <path d="M19 8H17V6A5 5 0 0 0 7 6V8H6A3 3 0 0 0 3 11V21A3 3 0 0 0 6 24H18A3 3 0 0 0 21 21V11A3 3 0 0 0 18 8ZM9 6A3 3 0 0 1 15 6V8H9ZM12 18A2 2 0 1 1 14 16A2 2 0 0 1 12 18Z"/>
+                <div className="node-circle" style={{ borderColor: '#7b1fa2' }}>
+                  <svg viewBox="0 0 24 24" width="22" height="22">
+                    <defs>
+                      <linearGradient id="node-1-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stopColor="#7b1fa2" />
+                        <stop offset="100%" stopColor="#ff6d00" />
+                      </linearGradient>
+                    </defs>
+                    <path fill="url(#node-1-grad)" d="M19 8H17V6A5 5 0 0 0 7 6V8H6A3 3 0 0 0 3 11V21A3 3 0 0 0 6 24H18A3 3 0 0 0 21 21V11A3 3 0 0 0 18 8ZM9 6A3 3 0 0 1 15 6V8H9ZM12 18A2 2 0 1 1 14 16A2 2 0 0 1 12 18Z"/>
                   </svg>
                 </div>
                 <span className="node-label label-top">Access Control Systems</span>
@@ -169,9 +183,15 @@ export default function Service() {
 
               {/* Node 2: CCTV (Top Right) */}
               <div className="diagram-node node-top-right">
-                <div className="node-circle" style={{ borderColor: '#1e88e5' }}>
-                  <svg viewBox="0 0 24 24" width="22" height="22" fill="#1e88e5">
-                    <path d="M16 17v-6.57l5.48-3.29A1 1 0 0 1 23 8v8a1 1 0 0 1-1.52.86L16 13.57V17a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v10Z"/>
+                <div className="node-circle" style={{ borderColor: '#ff6d00' }}>
+                  <svg viewBox="0 0 24 24" width="22" height="22">
+                    <defs>
+                      <linearGradient id="node-2-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stopColor="#ff6d00" />
+                        <stop offset="100%" stopColor="#d81b60" />
+                      </linearGradient>
+                    </defs>
+                    <path fill="url(#node-2-grad)" d="M16 17v-6.57l5.48-3.29A1 1 0 0 1 23 8v8a1 1 0 0 1-1.52.86L16 13.57V17a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v10Z"/>
                   </svg>
                 </div>
                 <span className="node-label label-top-right">CCTV Surveillance Solutions</span>
@@ -179,9 +199,15 @@ export default function Service() {
 
               {/* Node 3: Network Infrastructure (Bottom Right) */}
               <div className="diagram-node node-bottom-right">
-                <div className="node-circle" style={{ borderColor: '#ffb300' }}>
-                  <svg viewBox="0 0 24 24" width="22" height="22" fill="#ffb300">
-                    <path d="M12 2a3 3 0 1 1-3 3 3 3 0 0 1 3-3Zm-4 12H3a2 2 0 0 0-2 2v6h6v-6a2 2 0 0 0-2-2Zm13 0h-5a2 2 0 0 0-2 2v6h6v-6a2 2 0 0 0-2-2Z"/>
+                <div className="node-circle" style={{ borderColor: '#ff6d00' }}>
+                  <svg viewBox="0 0 24 24" width="22" height="22">
+                    <defs>
+                      <linearGradient id="node-3-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stopColor="#ff6d00" />
+                        <stop offset="100%" stopColor="#7b1fa2" />
+                      </linearGradient>
+                    </defs>
+                    <path fill="url(#node-3-grad)" d="M12 2a3 3 0 1 1-3 3 3 3 0 0 1 3-3Zm-4 12H3a2 2 0 0 0-2 2v6h6v-6a2 2 0 0 0-2-2Zm13 0h-5a2 2 0 0 0-2 2v6h6v-6a2 2 0 0 0-2-2Z"/>
                   </svg>
                 </div>
                 <span className="node-label label-bottom-right">Network Infrastructure & Troubleshooting</span>
@@ -189,9 +215,15 @@ export default function Service() {
 
               {/* Node 4: Time Attendance (Bottom Left) */}
               <div className="diagram-node node-bottom-left">
-                <div className="node-circle" style={{ borderColor: '#00c853' }}>
-                  <svg viewBox="0 0 24 24" width="22" height="22" fill="#00c853">
-                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2Zm-7 14.5A2.5 2.5 0 1 1 14.5 12 2.5 2.5 0 0 1 12 17.5ZM16.5 8.5h-9v-2h9z"/>
+                <div className="node-circle" style={{ borderColor: '#d81b60' }}>
+                  <svg viewBox="0 0 24 24" width="22" height="22">
+                    <defs>
+                      <linearGradient id="node-4-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stopColor="#d81b60" />
+                        <stop offset="100%" stopColor="#7b1fa2" />
+                      </linearGradient>
+                    </defs>
+                    <path fill="url(#node-4-grad)" d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2Zm-7 14.5A2.5 2.5 0 1 1 14.5 12 2.5 2.5 0 0 1 12 17.5ZM16.5 8.5h-9v-2h9z"/>
                   </svg>
                 </div>
                 <span className="node-label label-bottom-left">Time Attendance & Workforce Management</span>
@@ -199,9 +231,15 @@ export default function Service() {
 
               {/* Node 5: Intrusion & Alarm (Middle Left) */}
               <div className="diagram-node node-middle-left">
-                <div className="node-circle" style={{ borderColor: '#ff1744' }}>
-                  <svg viewBox="0 0 24 24" width="22" height="22" fill="#ff1744">
-                    <path d="M12 2C6.48 2 2 6.48 2 12v5c0 1.66 1.34 3 3 3h2v-8H4v-1c0-4.41 3.59-8 8-8s8 3.59 8 8v1h-3v8h2c1.66 0 3-1.34 3-3v-5c0-5.52-4.48-10-10-10Z"/>
+                <div className="node-circle" style={{ borderColor: '#d81b60' }}>
+                  <svg viewBox="0 0 24 24" width="22" height="22">
+                    <defs>
+                      <linearGradient id="node-5-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stopColor="#d81b60" />
+                        <stop offset="100%" stopColor="#ff6d00" />
+                      </linearGradient>
+                    </defs>
+                    <path fill="url(#node-5-grad)" d="M12 2C6.48 2 2 6.48 2 12v5c0 1.66 1.34 3 3 3h2v-8H4v-1c0-4.41 3.59-8 8-8s8 3.59 8 8v1h-3v8h2c1.66 0 3-1.34 3-3v-5c0-5.52-4.48-10-10-10Z"/>
                   </svg>
                 </div>
                 <span className="node-label label-middle-left">Intrusion & Alarm Systems</span>
