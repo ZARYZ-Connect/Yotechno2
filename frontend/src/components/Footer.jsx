@@ -30,10 +30,6 @@ export default function Footer() {
                 <img src={logoImg} alt="Yotechno Logo" className="footer__logo-img" />
               </div>
             </Link>
-            <div className="footer__built-by">
-              Built with <a href="https://www.zaryz.com" target="_blank" rel="noopener noreferrer" className="zaryz-link"><span className="zaryz-purple">Zaryz</span> <span className="zaryz-orange">Solutions</span></a>
-              <div className="built-by-underline" />
-            </div>
             <p className="footer__tagline">
               Empowering businesses with reliable security infrastructure and network solutions that drive growth and ensure peace of mind.
             </p>
@@ -109,7 +105,7 @@ export default function Footer() {
 
         <div className="footer__bottom">
           <p>© {new Date().getFullYear()} Yotechno Pvt Ltd. All rights reserved.</p>
-          <p>Built with <span className="heart">❤️</span> using React &amp; Django</p>
+          <p>Built with <a href="https://www.zaryz.com" target="_blank" rel="noopener noreferrer" className="zaryz-link"><span className="zaryz-purple">Zaryz</span> <span className="zaryz-orange">Solutions</span></a></p>
         </div>
       </div>
     </footer>
