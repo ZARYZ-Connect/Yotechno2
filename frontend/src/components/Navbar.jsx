@@ -26,7 +26,7 @@ export default function Navbar() {
   useEffect(() => { setMenuOpen(false) }, [location.pathname])
 
   return (
-    <header className={`navbar${scrolled ? ' navbar--scrolled' : ''}`}>
+    <header className={`navbar${scrolled || menuOpen ? ' navbar--scrolled' : ''}`}>
       <div className="navbar__inner container">
         {/* Logo */}
         <Link to="/" className="navbar__logo">

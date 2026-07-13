@@ -1,38 +1,66 @@
 /* ---- Hero ---- */
 .hero {
   position: relative;
-  background-image: 
-    linear-gradient(to right, #ffffff 40%, rgba(255, 255, 255, 0.9) 70%, rgba(255, 255, 255, 0.55) 100%), 
-    url('../assets/hero.png');
-  background-size: cover;
-  background-position: center right;
-  background-repeat: no-repeat;
-  border-bottom: 1px solid rgba(156, 39, 176, 0.08);
+  background: radial-gradient(circle at 85% 50%, rgba(138, 43, 226, 0.08) 0%, rgba(255, 255, 255, 0) 50%),
+              radial-gradient(circle at 95% 15%, rgba(36, 150, 237, 0.06) 0%, rgba(255, 255, 255, 0) 40%),
+              #ffffff;
+  border-bottom: 1px solid rgba(156, 39, 176, 0.06);
+  overflow: hidden;
 }
 .hero .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 48px;
   align-items: center;
   min-height: calc(100vh - 80px);
-  padding-top: 80px;
+  padding: 100px 0 60px;
 }
 
-.hero__content { max-width: 580px; }
+.hero__content {
+  max-width: 620px;
+  z-index: 2;
+}
+
+/* Biometric Badge Capsule */
+.hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #f6effb;
+  border: 1px solid rgba(156, 39, 176, 0.12);
+  color: #7b1fa2;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 8px 16px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.badge-dot {
+  color: #c026d3;
+  font-size: 0.5rem;
+  line-height: 1;
+}
+.badge-diamond {
+  color: #7b1fa2;
+  font-size: 0.65rem;
+  line-height: 1;
+}
 
 .hero__title {
-  font-size: clamp(2.4rem, 4.5vw, 3.6rem);
+  font-size: clamp(2.6rem, 5.2vw, 4.4rem);
   font-weight: 900;
   line-height: 1.1;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
   margin: 16px 0 24px;
-  color: var(--text-primary);
+  color: #0c0b1a;
 }
 
 .hero__subtitle {
   font-size: 1.1rem;
-  color: var(--text-secondary);
-  line-height: 1.75;
+  color: #5a4a7a;
+  line-height: 1.8;
   margin-bottom: 40px;
 }
 
@@ -40,88 +68,72 @@
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 }
 
+/* Technologies Section */
 .hero__tech {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
   gap: 12px;
-  flex-wrap: wrap;
 }
 .hero__tech-label {
   font-size: 0.8rem;
-  color: var(--text-muted);
-  font-weight: 500;
-  padding-top: 4px;
-  white-space: nowrap;
+  color: #7b6d9a;
+  font-weight: 600;
+  text-transform: capitalize;
 }
-.hero__tech-pills { display: flex; flex-wrap: wrap; gap: 6px; }
+.hero__tech-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
 
-/* Hero Code Card — light version */
+/* Tech Tag Pills */
+.tech-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+  border-radius: 50px;
+  padding: 6px 16px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #4a3e6d;
+  transition: all 0.3s ease;
+}
+.tech-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(156, 39, 176, 0.1);
+  border-color: rgba(156, 39, 176, 0.2);
+}
+.tech-icon {
+  flex-shrink: 0;
+}
+
+/* Hero Biometric Scanner Graphic */
 .hero__graphic {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.hero__code-card {
-  padding: 0;
-  overflow: hidden;
-  width: 100%;
-  max-width: 420px;
-  box-shadow: 0 16px 48px rgba(156, 39, 176, 0.14);
-  border-color: rgba(156, 39, 176, 0.15);
-  background: #1a0a2e !important;
-}
-
-.code-header {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 14px 16px;
-  background: rgba(255,255,255,0.04);
-  border-bottom: 1px solid rgba(255,255,255,0.07);
-}
-.code-dot { width: 12px; height: 12px; border-radius: 50%; display: block; }
-.code-filename { font-size: 0.78rem; color: rgba(255,255,255,0.4); margin-left: 8px; }
-
-.code-body {
-  padding: 24px;
-  font-family: 'Fira Code', 'Courier New', monospace;
-  font-size: 0.82rem;
-  line-height: 1.7;
-  color: #e040fb;
-  white-space: pre;
-  overflow-x: auto;
-  background: transparent;
-}
-
-.code-footer {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 16px;
-  background: rgba(255,255,255,0.03);
-  border-top: 1px solid rgba(255,255,255,0.06);
-}
-.pulse-dot {
-  width: 8px; height: 8px;
-  border-radius: 50%;
-  background: #22c55e;
   position: relative;
-  flex-shrink: 0;
+  z-index: 1;
 }
-.pulse-dot::after {
-  content: '';
-  position: absolute;
-  inset: -3px;
-  border-radius: 50%;
-  background: #22c55e;
-  animation: pulse-ring 1.5s ease-out infinite;
+.hero__image {
+  width: 100%;
+  max-width: 580px;
+  height: auto;
+  border-radius: 28px;
+  box-shadow: 0 20px 50px rgba(138, 43, 226, 0.12),
+              0 0 40px rgba(36, 150, 237, 0.06);
+  transition: all 0.5s ease;
 }
-.code-footer span:last-child {
-  color: #c026d3 !important;
-  font-size: 0.8rem;
+.hero__image:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 24px 60px rgba(138, 43, 226, 0.16),
+              0 0 50px rgba(36, 150, 237, 0.1);
 }
 
 /* ---- Stats ---- */

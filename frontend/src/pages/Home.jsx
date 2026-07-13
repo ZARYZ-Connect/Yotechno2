@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import './Home.css'
+import heroImg from '../assets/hero.png'
 
 const features = [
   {
@@ -60,13 +61,15 @@ export default function Home() {
       <section className="hero section">
         <div className="container">
           <div className="hero__content">
-            <div className="section-label animate-fade-up">
-              ◆ Yotechno — Innovation Unleashed
+            <div className="hero__badge animate-fade-up">
+              <span className="badge-dot">●</span> <span className="badge-diamond">◆</span> YOTECHNO — INNOVATION UNLEASHED
             </div>
 
             <h1 className="hero__title animate-fade-up" style={{ animationDelay: '0.1s' }}>
-              We Build <span className="gradient-text">Digital</span> Products<br />
-              That <span className="gradient-text">Transform</span> Businesses
+              We Build <span className="gradient-text">Digital</span><br />
+              Products<br />
+              That <span className="gradient-text">Transform</span><br />
+              Businesses
             </h1>
 
             <p className="hero__subtitle animate-fade-up" style={{ animationDelay: '0.2s' }}>
@@ -83,45 +86,12 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Tech Pills */}
-            <div className="hero__tech animate-fade-up" style={{ animationDelay: '0.4s' }}>
-              <span className="hero__tech-label">Technologies:</span>
-              <div className="hero__tech-pills">
-                {techStack.map(t => (
-                  <span key={t} className="tag">{t}</span>
-                ))}
-              </div>
-            </div>
+
           </div>
 
           {/* Hero Graphic */}
           <div className="hero__graphic animate-fade-in" style={{ animationDelay: '0.3s' }}>
-            <div className="hero__code-card glass-card">
-              <div className="code-header">
-                <span className="code-dot" style={{ background: '#ff5f57' }} />
-                <span className="code-dot" style={{ background: '#febc2e' }} />
-                <span className="code-dot" style={{ background: '#28c840' }} />
-                <span className="code-filename">yotechno.py</span>
-              </div>
-              <pre className="code-body">{`# Yotechno Engine 🚀
-class Innovation:
-  def __init__(self):
-    self.skills = [
-      "React", "Django",
-      "AI/ML", "Cloud",
-    ]
-    self.passion = float("inf")
-  
-  def build(self, idea):
-    return transform(
-      idea, self.skills
-    )`}
-</pre>
-              <div className="code-footer">
-                <span className="pulse-dot" />
-                <span style={{ color: 'var(--accent-cyan)', fontSize: '0.8rem' }}>Live — Production</span>
-              </div>
-            </div>
+            <img src={heroImg} alt="Biometric Fingerprint Scanner" className="hero__image" />
           </div>
         </div>
       </section>

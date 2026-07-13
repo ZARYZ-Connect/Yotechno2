@@ -5,12 +5,11 @@ import './Solutions.css'
 
 // Fallback data if API is unavailable
 const fallbackSolutions = [
-  { id:1, title:'Web Development',       icon:'🌐', description:'Scalable, modern web apps built with React, Django, Node.js and more.', tags:['React','Django','REST API'] },
-  { id:2, title:'Mobile Applications',   icon:'📱', description:'Cross-platform mobile apps for iOS & Android using React Native and Flutter.', tags:['React Native','Flutter','iOS','Android'] },
-  { id:3, title:'Cloud Solutions',       icon:'☁️', description:'Reliable cloud infrastructure on AWS, Azure, and GCP — from deployment to auto-scaling.', tags:['AWS','Azure','GCP','Docker'] },
-  { id:4, title:'AI & Machine Learning', icon:'🤖', description:'Intelligent solutions — chatbots, recommendation engines, predictive analytics.', tags:['Python','TensorFlow','OpenAI','NLP'] },
-  { id:5, title:'UI/UX Design',          icon:'🎨', description:'Beautiful, user-centred designs with Figma — from wireframes to polished prototypes.', tags:['Figma','Prototyping','User Research'] },
-  { id:6, title:'Cybersecurity',         icon:'🔒', description:'Security audits, penetration testing, and compliance consulting to protect your digital assets.', tags:['Pentest','Compliance','ISO 27001'] },
+  { id:1, title:'Access Control Systems', icon:'🔐', description:'Supply, installation, configuration, and maintenance of advanced access control solutions for businesses, offices, educational institutions, and industrial facilities.', tags:['Installation','Configuration','Maintenance','Biometric','Card Access'] },
+  { id:2, title:'CCTV Surveillance Solutions', icon:'📹', description:'Complete surveillance system deployment including camera installation, monitoring setup, remote access configuration, and maintenance.', tags:['Camera Installation','Remote Access','Monitoring','HD/4K','NVR/DVR'] },
+  { id:3, title:'Intrusion & Alarm Systems', icon:'🚨', description:'Professional installation and configuration of smart alarm and intrusion detection systems to safeguard your premises.', tags:['Alarm Systems','Motion Sensors','Smart Detection','Real-time Alerts'] },
+  { id:4, title:'Time Attendance & Workforce Management', icon:'🏢', description:'Advanced attendance tracking solutions for organizations of all sizes with seamless software integration.', tags:['Attendance Tracking','Payroll Integration','Biometric','HR Software'] },
+  { id:5, title:'Network Infrastructure & Troubleshooting', icon:'🌐', description:'Design, installation, optimization, and troubleshooting of wired and wireless networks to ensure uninterrupted connectivity.', tags:['Wired Networks','Wi-Fi Solutions','Optimization','Troubleshooting'] },
 ]
 
 const process = [
@@ -47,7 +46,7 @@ export default function Solutions() {
             Tech Solutions That <br /><span className="gradient-text">Drive Real Results</span>
           </h1>
           <p className="page-hero-subtitle animate-fade-up" style={{ animationDelay: '0.2s' }}>
-            From full-stack development to cloud architecture and AI — we have the expertise to bring your boldest ideas to life.
+            From advanced access control and security infrastructure to network troubleshooting and workforce management — we deliver reliable technology services backed by certified expertise.
           </p>
         </div>
       </section>

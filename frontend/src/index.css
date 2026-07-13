@@ -283,9 +283,9 @@ button { cursor: pointer; font-family: inherit; border: none; outline: none; }
   background: linear-gradient(180deg, rgba(156,39,176,0.04) 0%, transparent 100%);
 }
 .page-hero-title {
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(1.6rem, 3.5vw, 2.6rem);
   font-weight: 900;
-  line-height: 1.1;
+  line-height: 1.2;
   margin-bottom: 20px;
 }
 .page-hero-subtitle {
