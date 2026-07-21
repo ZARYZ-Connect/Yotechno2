@@ -5,28 +5,33 @@ import heroImg from '../assets/hero.png'
 const features = [
   {
     icon: '🚀',
-    title: 'End-to-End Technology Solutions',
-    desc: 'From product supply to deployment, we provide complete technology solutions tailored to your business needs.',
+    title: 'Fast Delivery',
+    desc: 'We ship production-ready products on time, every time — without cutting corners on quality.',
   },
   {
-    icon: '🛠️',
-    title: 'Expert Installation & Setup',
-    desc: 'Our experienced technicians handle complete installation and configuration, ensuring everything works seamlessly from day one.',
+    icon: '🎯',
+    title: 'Precision Engineering',
+    desc: 'Every line of code is crafted with intent. Clean architecture and best practices always.',
   },
   {
-    icon: '🌐',
-    title: 'Network Infrastructure Services',
-    desc: 'Design, deployment, and maintenance of secure, high-performance network environments.',
+    icon: '🔒',
+    title: 'Secure by Default',
+    desc: "Security is baked into every layer. From APIs to frontends, you're protected.",
   },
   {
-    icon: '💻',
-    title: 'Software Deployment & Support',
-    desc: 'Comprehensive software installation, configuration, troubleshooting, and maintenance to keep your operations running smoothly.',
+    icon: '📊',
+    title: 'Data-Driven Insights',
+    desc: 'Make smarter decisions with analytics dashboards and AI-powered reporting tools.',
+  },
+  {
+    icon: '☁️',
+    title: 'Cloud-Native',
+    desc: 'Scalable, resilient infrastructure that grows with you — no downtime, no limits.',
   },
   {
     icon: '🤝',
-    title: 'Ongoing Technical Assistance',
-    desc: 'Our support team is ready to assist with technical issues, maintenance, and ongoing service whenever technical challenges arise.',
+    title: 'Dedicated Support',
+    desc: "24/7 support from our expert team. We're always here when you need us.",
   },
 ]
 
@@ -111,10 +116,10 @@ export default function Home() {
           <div className="home-section-header">
             <div className="section-label">Why Choose Us</div>
             <h2 className="section-title">
-              Solutions That Turn Ambition Into <span className="gradient-text">Results</span>
+              Everything You Need to <span className="gradient-text">Succeed</span>
             </h2>
             <p className="section-subtitle">
-              From strategy to execution, we help businesses overcome challenges, unlock opportunities, and achieve sustainable success through technology-driven innovation.
+              We combine cutting-edge technology with deep industry expertise to deliver solutions that actually move the needle for your business.
             </p>
           </div>
 
