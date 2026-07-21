@@ -13,7 +13,8 @@
   gap: 48px;
   align-items: center;
   min-height: calc(100vh - 80px);
-  padding: 100px 0 60px;
+  padding-top: 100px;
+  padding-bottom: 60px;
 }
 
 .hero__content {
@@ -207,4 +208,13 @@
 @media (max-width: 580px) {
   .features-grid { grid-template-columns: 1fr; }
   .cta-banner { padding: 48px 24px; }
+  .hero__badge {
+    font-size: 0.65rem;
+    padding: 6px 12px;
+    white-space: normal;
+    text-align: center;
+  }
+  .hero__title {
+    font-size: clamp(2.2rem, 8vw, 3rem);
+  }
 }
