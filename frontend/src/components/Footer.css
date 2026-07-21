@@ -3,6 +3,7 @@
   border-top: none;
   position: relative;
   z-index: 1;
+  margin-top: 100px; /* Space above the footer */
 }
 
 /* Gradient top accent line */
@@ -14,7 +15,7 @@
   background: linear-gradient(90deg, #7b1fa2 0%, #ff6d00 100%);
 }
 
-.footer__inner { padding: 80px 0 40px; }
+.footer__inner.container { padding: 80px 24px 40px; }
 
 .footer__grid {
   display: grid;
