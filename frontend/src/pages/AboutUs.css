@@ -230,6 +230,7 @@
 @media (max-width: 560px) {
   .values-grid { grid-template-columns: 1fr; }
   .team-grid { grid-template-columns: 1fr; }
+  .about-hero__panel { grid-template-columns: 1fr; gap: 16px; }
 }
 
 /* Growth Journey Section */

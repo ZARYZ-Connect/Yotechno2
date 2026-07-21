@@ -438,6 +438,7 @@
   .diagram-container {
     width: 320px;
     height: 320px;
+    max-width: 100%;
   }
   .diagram-center-node {
     width: 140px;

@@ -379,3 +379,6 @@ button { cursor: pointer; font-family: inherit; border: none; outline: none; }
   .page-hero { padding: 120px 0 60px; }
   .stats-row { grid-template-columns: repeat(2, 1fr); }
 }
+@media (max-width: 480px) {
+  .stats-row { grid-template-columns: 1fr; }
+}
